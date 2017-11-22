@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import * as actionCreators from './actions/ActionCreators';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -11,8 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">{this.props.gd.message}</h1>
+          <a href="https://github.com/harrisjm3/portfolio" className="App-title">
+              https://github.com/harrisjm3/portfolio
+          </a>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
